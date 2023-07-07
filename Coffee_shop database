@@ -1,0 +1,27 @@
+-create a coffee shop database and display the ordered by asc prices
+
+CREATE TABLE coffee_shop 
+(id integer PRIMARY KEY, 
+item text, 
+quantity integer, 
+cost integer, 
+sell_price integer);
+
+INSERT INTO coffee_shop (id, item, quantity, cost, sell_price)
+VALUES 
+(1, "table", 5, 100, 150),
+(2, "chair", 10, 50, 75),
+(3, "coffee beans", 100, 5, 10),
+(4, "espresso", 1000, 1, 3),
+(5, "Ice cream", 200, 1, 5),
+(6, "bean bag", 10, 30, 50),
+(7, "cookies", 300, 5, 15),
+(8, "cake", 10, 2, 8),
+(9, "table", 5, 100, 150),
+(10, "chair", 10, 50, 75),
+(11, "coffee beans", 100, 5, 10),
+(12, "espresso", 1000, 1, 3),
+(13, "Ice cream", 200, 1, 5),
+(14, "bean bag", 10, 30, 50),
+(15, "cookies", 300, 5, 15);
+Select * from coffee_shop Order by cost;
